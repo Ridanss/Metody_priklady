@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>G:\Pavlon\PRG\C#\09.Metody\Priklady\Weedeg\Weedeg.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

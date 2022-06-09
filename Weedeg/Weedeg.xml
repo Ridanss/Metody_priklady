@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Weedeg</name>
+    </assembly>
+    <members>
+        <member name="T:Weedeg.weedeg">
+            <summary>
+            Metody pro weedga
+            </summary>
+        </member>
+        <member name="M:Weedeg.weedeg.Zaokrouhleni(System.Int32,System.Int32)">
+            <summary>
+            Zaokrouhlí číslo
+            </summary>
+            <param name="cislo">Vstupní číslo na zaokrouhlení</param>
+            <param name="rad">Na jaké řády chceme zaokrouhlit (default: 10)</param>
+            <returns>Vrátí zaokrouhlený výsledek</returns>
+        </member>
+        <member name="M:Weedeg.weedeg.Prvocislo(System.Int32@)">
+            <summary>
+            Zjistí zda se jedná a prvočíslo, pokud ne tak prvek vynásobí svým největším dělitelem
+            </summary>
+            <param name="vynasobene">Prvek vynasobeny svym nejvetsim delitelem</param>
+            <param name="prvek">input, pokud prvek neni provicslo tak se v nem vrati hodnota prvku vynasobeneho jeho nejvetsim delitelem</param>
+            <returns>vrátí hodnotu bool prvocislo</returns>
+        </member>
+        <member name="M:Weedeg.weedeg.MarginOfError(System.Int32,System.Double)">
+            <summary>
+            Spočítá přesnost průzkumu z velikosti průzkumu a z počtu kladných odpovědí s 95% přesností (kladných myšleno ANO na dotázanou otázku)
+            </summary>
+            <param name="sample_size">Počet lidí v průzkumu</param>
+            <param name="sample_proportion">Počet lidí co odpověděli kladně v desetiném čísle (když 58% odpovědělo ano, tak zadáváme 0.58)</param>
+            <returns>Vrátí +- odchylku průzkumu v procentech</returns>
+        </member>
+    </members>
+</doc>
